@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!--Calculator Container-->
+    <div class="calculator">
+        <!-- Calculator Result Screen -->
+        <div class="result" id="result">0</div>
+        <!-- Calculator Buttons -->
+        <div class="calculator-buttons">
+            <div class="button" onclick="appendToResult('7')">7</div>
+            <div class="button" onclick="appendToResult('8')">8</div>
+            <div class="button" onclick="appendToResult('9')">9</div>
+            <div class="button" onclick="appendToResult('/')">÷</div>
+            <div class="button" onclick="appendToResult('4')">4</div>
+            <div class="button" onclick="appendToResult('5')">5</div>
+            <div class="button" onclick="appendToResult('6')">6</div>
+            <div class="button" onclick="appendToResult('*')">&#215;</div>
+            <div class="button" onclick="appendToResult('1')">1</div>
+            <div class="button" onclick="appendToResult('2')">2</div>
+            <div class="button" onclick="appendToResult('3')">3</div>
+            <div class="button" onclick="appendToResult('-')">-</div>
+            <div class="button" onclick="appendToResult('0')">0</div>
+            <div class="button" onclick="appendToResult('.')">.</div>
+            <!--For Result-->
+            <div class="button" onclick="calculateResult()">=</div>
+            <div class="button" onclick="appendToResult('+')">+</div>
+            <!-- To Remove Last Charater-->
+            <div class="button delete" onclick="deleteLastCharacter()"></div>
+            <!-- To Clear Result -->
+            <div class="button clear" onclick="clearResult()"></div>
+        </div>
+    </div>
+</body>
+</html>
